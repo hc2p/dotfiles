@@ -7,7 +7,7 @@ export PATH=${PATH}:/usr/local/mysql/bin
 export PS1="$ "
 
 # use vim as a default command line editor
-export EDITOR="vim"
+export EDITOR="code"
 
 # enable bash autocompletion
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
@@ -42,34 +42,8 @@ alias top="top -o vsize"
 alias serve="echo 'Your cool server is runing on http://localhost:8000/' && open http://localhost:8000/ && python -m SimpleHTTPServer 8000"
 alias servephp="echo 'Your cool server is runing on http://localhost:8000/' && open http://localhost:8000/ && php -S 0.0.0.0:8000 -t ."
 
-# start / stop apache & MySQL
-alias am-start="sudo apachectl start && mysql.server start"
-alias am-stop="sudo apachectl stop && mysql.server stop"
-
-# npm shit
-alias npmi="npx benny-hill npm i"
-alias npmu="npx benny-hill npm u"
-alias npmt="npx benny-hill npm t"
-
 # sudo autocomplete
 complete -cf sudo
-
-# nvm setup
-# command provided post brew install nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
-
-nvm_auto_use() {
-  if [[ $PWD == $PREV_PWD ]]; then
-    return
-  fi
-
-  PREV_PWD=$PWD
-  [[ -f ".nvmrc" ]] && nvm use
-}
-
-export PROMPT_COMMAND=nvm_auto_use
 
 # enable bash-completion
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"

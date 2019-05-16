@@ -3,35 +3,6 @@ defaults write -globalDomain "AppleScrollerPagingBehavior" -bool true
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-# System Preferences > Desktop & Screen Saver > Start after: Never
-defaults -currentHost write com.apple.screensaver idleTime -int 0
-
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-
-# System Preferences > Dock > Size:
-defaults write com.apple.dock tilesize -int 36
-
-# System Preferences > Dock > Magnification:
-defaults write com.apple.dock magnification -bool true
-
-# System Preferences > Dock > Size (magnified):
-defaults write com.apple.dock largesize -int 54
-
-# System Preferences > Dock > Minimize windows using: Scale effect
-defaults write com.apple.dock mineffect -string "scale"
-
-# System Preferences > Dock > Minimize windows into application icon
-defaults write com.apple.dock minimize-to-application -bool true
-
-# System Preferences > Dock > Automatically hide and show the Dock:
-defaults write com.apple.dock autohide -bool true
-
-# System Preferences > Dock > Automatically hide and show the Dock (duration)
-defaults write com.apple.dock autohide-time-modifier -float 0.5
-
-# System Preferences > Dock > Automatically hide and show the Dock (delay)
-defaults write com.apple.dock autohide-delay -float 0
-
 # System Preferences > Dock > Show indicators for open applications
 defaults write com.apple.dock show-process-indicators -bool true
 
@@ -58,12 +29,12 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-# System Preferences > Accessibility > Mouse & Trackpad > Trackpad Potions
-defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
+# # System Preferences > Accessibility > Mouse & Trackpad > Trackpad Potions
+# defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
+# defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
 
-defaults write com.apple.AppleMultitouchTrackpad Dragging -bool false
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Dragging -bool false
+# defaults write com.apple.AppleMultitouchTrackpad Dragging -bool false
+# defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Dragging -bool false
 
 # System Preferences > Accessibility > Mouse & Trackpad > Trackpad Potions
 
@@ -86,10 +57,10 @@ defaults write com.apple.finder ShowPathbar -bool true
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-# Others:
+# # Others:
 
-# Completely Disable Dashboard
-defaults write com.apple.dashboard mcx-disabled -bool true
+# # Completely Disable Dashboard
+# defaults write com.apple.dashboard mcx-disabled -bool true
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 

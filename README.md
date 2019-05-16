@@ -50,45 +50,44 @@ Alfred: use GUI
 
 8. SSH setup
 
+9. Dropbox syncing
+- install Dropbox
+- Symlink ~/projects -> Dropbox/mercedes-projects
+
 9. Download your fav apps from App Store or independent websites:
 
-- Affinity Photo
-- Affinity Design
-- Affinity Publisher
+- 1Password
+- Docker
+- BetterTouchTool
+- Trailer
+- Firefox
+- Postman
+- VS Code
 - Keynote
 - Numbers
 - Pages
-- Palette Master Element
-- Reeder
-- Things
+- Office (IT?)
+- Things (?) / OneNote (?)
 
 10. download VSCode plugins
 
 ```
-code --install-extension ban.spellright
-code --install-extension dbaeumer.vscode-eslint
-code --install-extension esbenp.prettier-vscode
-code --install-extension idleberg.applescript
-code --install-extension karigari.chat
-code --install-extension mrmlnc.vscode-duplicate
-code --install-extension ms-vsliveshare.vsliveshare
-code --install-extension ms-vsliveshare.vsliveshare-audio
-code --install-extension ms-vsliveshare.vsliveshare-pack
-code --install-extension pawelgrzybek.gatito-theme
+code --install-extension arcticicestudio.nord-visual-studio-code
+code --install-extension Arjun.swagger-viewer
+code --install-extension castwide.solargraph
+code --install-extension karyfoundation.theme-karyfoundation-themes
+code --install-extension Equinusocio.vsc-material-theme
+code --install-extension PKief.material-icon-theme
+code --install-extension EditorConfig.EditorConfig
+code --install-extension file-icons.file-icons
+code --install-extension ipedrazas.kubernetes-snippets
+code --install-extension PeterJausovec.vscode-docker
+code --install-extension mauve.terraform
+code --install-extension mohsen1.prettify-json
+code --install-extension ms-mssql.mssql
+code --install-extension rebornix.ruby
+code --install-extension donjayamanne.python-extension-pack
+code --install-extension donjayamanne.git-extension-pack
+code --install-extension DougFinke.vscode-pandoc
 ```
 
-11. download node and some global yarn stuff
-
-```
-nvm install node
-```
-
-```
-yarn global add eslint @typescript-eslint/parser eslint-config-prettier eslint-plugin-prettier eslint-plugin-react jest prettier typescript vsce
-```
-
-12. Capture One Pro config symlinks
-
-```
-ln -s ~/.dotfiles/Capture\ One/* ~/Library/Application\ Support/Capture\ One/
-```

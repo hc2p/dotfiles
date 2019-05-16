@@ -1,6 +1,6 @@
 [user]
-  name = Pawel Grzybek
-  email = pawelgrzybek@users.noreply.github.com
+  name = Hannes Probst
+  email = hannes.probst@mercedes-benz.io
 [color]
   ui = true
 [push]
@@ -11,4 +11,9 @@
 [status]
   showUntrackedFiles = all
 [core]
-	fileMode = false
+  fileMode = false
+[filter "lfs"]
+  process = git-lfs filter-process
+  required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
