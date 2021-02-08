@@ -8,9 +8,6 @@ defaults write com.apple.dock show-process-indicators -bool true
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-# System Preferences > Mission Controll > Automatically rearrange Spaces based on most recent use
-defaults write com.apple.dock mru-spaces -bool false
-
 # System Preferences > Mission Controll > Dashboard
 defaults write com.apple.dock dashboard-in-overlay -bool true
 
@@ -24,19 +21,8 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-# System Preferences > Trackpad > Tap to click
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
-
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-
-# # System Preferences > Accessibility > Mouse & Trackpad > Trackpad Potions
-# defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
-# defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
-
-# defaults write com.apple.AppleMultitouchTrackpad Dragging -bool false
-# defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Dragging -bool false
-
-# System Preferences > Accessibility > Mouse & Trackpad > Trackpad Potions
+# System Preferences > Trackpad
+defaults import com.apple.AppleMultitouchTrackpad multitouchtrackpad.plist
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
@@ -57,10 +43,6 @@ defaults write com.apple.finder ShowPathbar -bool true
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-# # Others:
-
-# # Completely Disable Dashboard
-# defaults write com.apple.dashboard mcx-disabled -bool true
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 

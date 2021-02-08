@@ -3,29 +3,34 @@ brew upgrade
 
 # Add some casks
 brew tap homebrew/cask-versions
-# brew tap aws/tap
 
 # Install CLI tools
-# brew install aws-sam-cli
 brew install awscli
 brew install bash-completion
 brew install cowsay
 brew install git
-brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/505fcec7a3cf4f1a073b45bc7ae8294649a33f89/Formula/kubernetes-cli.rb
+brew install kubectl
 brew install kubernetes-helm
+brew install derailed/k9s/k9s
+
 
 # Install Software
-brew cask install 1password
-brew cask install alfred
-brew cask install cleanmymac
-brew cask install forklift
-brew cask install google-chrome
-brew cask install hyper
-brew cask install slack
-brew cask install visual-studio-code
-brew cask install postman
-brew cask install skype-for-business
-brew cask install sequel-pro
+brew install --cask firefox
+brew install --cask alfred
+brew install --cask slack
+brew install --cask visual-studio-code
+brew install --cask postman
+brew install --cask paw
+brew install --cask skype-for-business
+brew install --cask sequel-pro
+brew install --cask iterm3
+brew install --cask bettertouchtool
+brew install --cask postico
+brew install --cask docker
+brew install --cask spotify
+brew install --cask xmind-zen
+brew install --cask fork
+brew install --cask bitwarden
 
 # Remove outdated versions from the cellar.
 brew cleanup

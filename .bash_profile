@@ -21,7 +21,6 @@ alias .....="cd ../../../.."
 # utility shortcuts improved
 alias ls="ls -F" # show trailing slash with folders
 alias ll="ls -la" # show list of all files (including hidden)
-alias yolo="brew upgrade && brew cask upgrade && yarn global upgrade --latest" # upgrade everything
 
 # some git shortcuts
 alias g="git"
@@ -40,10 +39,6 @@ alias top="top -o vsize"
 
 # run a dead simple python server
 alias serve="echo 'Your cool server is runing on http://localhost:8000/' && open http://localhost:8000/ && python -m SimpleHTTPServer 8000"
-alias servephp="echo 'Your cool server is runing on http://localhost:8000/' && open http://localhost:8000/ && php -S 0.0.0.0:8000 -t ."
-
-# sudo autocomplete
-complete -cf sudo
 
 # enable bash-completion
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"

@@ -1,6 +1,6 @@
 # Variables
 dir=~/.dotfiles
-files=".bash_profile .gitconfig .hushlogin .inputrc .vimrc .hyper.js"
+files=".bash_profile .gitconfig .inputrc .vimrc .zshrc"
 
 # Lets make it look nicer
 echo ""
