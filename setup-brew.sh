@@ -23,7 +23,7 @@ brew install --cask postman
 brew install --cask paw
 brew install --cask skype-for-business
 brew install --cask sequel-pro
-brew install --cask iterm3
+brew install --cask iterm2
 brew install --cask bettertouchtool
 brew install --cask postico
 brew install --cask docker
