@@ -12,7 +12,7 @@ brew install git
 brew install kubectl
 brew install kubernetes-helm
 brew install derailed/k9s/k9s
-
+brew install gpg
 
 # Install Software
 brew install --cask firefox
